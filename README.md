@@ -3,8 +3,9 @@
 Create your own crypto currency from scratch for web3 using solana cli & metaplex
 
 
-## Main Page:
+### Main Page:
   - https://solana22.vercel.app
+
 
 ## Links:
   - https://phantom.com/
