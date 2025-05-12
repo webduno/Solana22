@@ -39,6 +39,15 @@ spl-token authorize TOKEN_ADDRESS  mint --disable
 spl-token authorize TOKEN_ADDRESS  freeze --disable
 ```
 
+## Metadata Structure:
+```
+{
+    "name": "Newest Coin Token",
+    "symbol": "NEWCOIN",
+    "description": "This is a token program on the Solana blockchain, defining a common implementation for fungible tokens",
+    "image": "https://solana22.vercel.app/image.png"
+}    
+```
 
 
 ## Example Metadata Files:
