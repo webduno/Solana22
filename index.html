@@ -15,6 +15,7 @@
     <title>Solana Token22 Helper</title>
 </head>
 <body class="bg-b-20 flex-col mt-8  tx-gray pb-100">
+    <div  id="templateViewId">
     <a href="/" class="flex-col nodeco tx-gray">
         <h1 class="tx-mdl opaci-75 tx-ls-3 mb-1" >Solana Token22 Helper</h1>
         <div class="tx-sm underline opaci-50 tx-ls-3  mb-4" >solana22.vercel.app</div>
@@ -22,7 +23,9 @@
     </a>
     <hr class="w-90 w-max-700px opaci-10 mt-8">
     <p class="tx-lg tx-center px-4 mb-0">This is a helper for the Solana Token22 Program</p>
-    <p class="w-300px tx-center">It is a simple tool that allows you to create and manage your tokens on the Solana blockchain.</p>
+    <div class="flex-col">
+        <p class="w-300px tx-center">It is a simple tool that allows you to create and manage your tokens on the Solana blockchain.</p>
+    </div>
     <div class="flex-col mt-8" id="exampleList">
         <div class="tx-mdl opaci-75 tx-ls-3 mb-1" >Download Example JSONs</div>
         <ul class="flex-wrap flex-align-start gap-8 ">
@@ -111,18 +114,43 @@
                 </ul>
             </li>
         </ul>
-    <hr class="w-90 w-max-700px opaci-10 my-8">
+    <hr class="w-90 w-max-700px opaci-10 my-100">
     <a href="/image.png" target="_blank" class="flex-col nodeco tx-gray">
         <div class="tx-mdl opaci-75 tx-ls-3 mb-1" >Download Example Image</div>
         <div class="tx-sm underline opaci-50 tx-ls-3  mb-4" >solana22.vercel.app/image.png</div>
             <img src="image.png" alt="Solana Token22 Helper" class="w-100px ">
         </a>
+    <hr class="w-90 w-max-700px opaci-10 my-100">
+    <div>
+        <div class="tx-mdl opaci-75 tx-ls-3 mb-2 tx-center" >Metadata JSON Structure</div>
+        
+    <div class="flex-col ">
+        <button data-click="copy">
+            Copy
+        </button>
+</div>
+        <pre class="ma-0">
+            <code class="w-min-300px block autoverflow-x bg-w-90 bord-r-8 px-4 w-90 w-max-700px">
+{
+    "name": "Newest Coin Token",
+    "symbol": "NEWCOIN",
+    "description": "This is a token program on the Solana blockchain, defining a common implementation for fungible tokens",
+    "image": "https://solana22.vercel.app/image.png"
+}
+            </code>
+        </pre>        
+
     </div>
+
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script>
     class jQueryTemplateView {
 	constructor($container, options, data = null)
 	{
 		this.$container = $($container);
+        console.log(this.$container);
 
 		this.options = Object.assign({
 		}, options);
@@ -146,6 +174,12 @@
 
 		this.clickers =
 		{
+            copy: function(event)
+            {
+                let text = `{"name": "Newest Coin Token","symbol": "NEWCOIN","description": "This is a token program on the Solana blockchain, defining a common implementation for fungible tokens","image": "https://solana22.vercel.app/image.png"}`
+                navigator.clipboard.writeText(text);
+                alert('Copied to clipboard');
+            }
 		};
 
 		this.initWatchers();
@@ -168,7 +202,6 @@
 }
 
 $(document).ready(function(){
-
 	let newjQueryTemplateView = new jQueryTemplateView('#templateViewId', {
 	});
 
@@ -176,6 +209,5 @@ $(document).ready(function(){
 
 </script>    
     
-
 </body>
 </html>
