@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/csscss@1.1.2/index.css">
+    <link rel="icon" href="favicon.ico">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <title>Solana Token22 Helper</title>
+</head>
+<body class="bg-b-20 flex-col mt-8  tx-gray pb-100">
+    <div  id="templateViewId">
+    <a href="/" class="flex-col nodeco tx-gray">
+        <h1 class="tx-mdl opaci-75 tx-ls-3 mb-1" >Solana Token22 Helper</h1>
+        <div class="tx-sm underline opaci-50 tx-ls-3  mb-4" >solana22.vercel.app</div>
+        <img src="solana.png" alt="Solana Token22 Helper" class="w-100px ">
+    </a>
+    <hr class="w-90 w-max-700px opaci-10 mt-8">
+    <p class="tx-lg tx-center px-4 mb-0">This is a helper for the Solana Token22 Program</p>
+    <div class="flex-col">
+        <p class="w-300px tx-center">It is a simple tool that allows you to create and manage your tokens on the Solana blockchain.</p>
+    </div>
+    <div class="flex-col mt-8" id="exampleList">
+        <div class="tx-mdl opaci-75 tx-ls-3 mb-1" >Download Example JSONs</div>
+        <ul class="flex-wrap flex-align-start gap-8 ">
+            <li>
+                <strong>A</strong>
+                <ul class="ma-0 pa-0">
+                    <li><a href="/gen/A/metadata_ALL.json" target="_blank">ALL</a></li>
+                    <li><a href="/gen/A/metadata_AND.json" target="_blank">AND</a></li>
+                    <li><a href="/gen/A/metadata_ARE.json" target="_blank">ARE</a></li>
+                    <li><a href="/gen/A/metadata_ANY.json" target="_blank">ANY</a></li>
+                    <li><a href="/gen/A/metadata_ASK.json" target="_blank">ASK</a></li>
+                </ul>
+            </li>
+            <li>
+                <strong>C</strong>
+                <ul class="ma-0 pa-0">
+                    <li><a href="/gen/C/metadata_CAN.json" target="_blank">CAN</a></li>
+                    <li><a href="/gen/C/metadata_CAT.json" target="_blank">CAT</a></li>
+                    <li><a href="/gen/C/metadata_CUT.json" target="_blank">CUT</a></li>
+                </ul>
+            </li>
+            <li>
+                <strong>F</strong>
+                <ul class="ma-0 pa-0">
+                    <li><a href="/gen/F/metadata_FOR.json" target="_blank">FOR</a></li>
+                    <li><a href="/gen/F/metadata_FAR.json" target="_blank">FAR</a></li>
+                    <li><a href="/gen/F/metadata_FUN.json" target="_blank">FUN</a></li>
+                </ul>
+            </li>
+            <li>
+                <strong>H</strong>
+                <ul class="ma-0 pa-0">
+                    <li><a href="/gen/H/metadata_HAD.json" target="_blank">HAD</a></li>
+                    <li><a href="/gen/H/metadata_HAS.json" target="_blank">HAS</a></li>
+                    <li><a href="/gen/H/metadata_HER.json" target="_blank">HER</a></li>
+                    <li><a href="/gen/H/metadata_HIS.json" target="_blank">HIS</a></li>
+                    <li><a href="/gen/H/metadata_HOW.json" target="_blank">HOW</a></li>
+                </ul>
+            </li>
+            <li>
+                <strong>M</strong>
+                <ul class="ma-0 pa-0">
+                    <li><a href="/gen/M/metadata_MAN.json" target="_blank">MAN</a></li>
+                    <li><a href="/gen/M/metadata_MAP.json" target="_blank">MAP</a></li>
+                    <li><a href="/gen/M/metadata_MAY.json" target="_blank">MAY</a></li>
+                </ul>
+            </li>
+            <li>
+                <strong>O</strong>
+                <ul class="ma-0 pa-0">
+                    <li><a href="/gen/O/metadata_OUT.json" target="_blank">OUT</a></li>
+                    <li><a href="/gen/O/metadata_ONE.json" target="_blank">ONE</a></li>
+                    <li><a href="/gen/O/metadata_OUR.json" target="_blank">OUR</a></li>
+                </ul>
+            </li>
+            <li>
+                <strong>S</strong>
+                <ul class="ma-0 pa-0">
+                    <li><a href="/gen/S/metadata_SHE.json" target="_blank">SHE</a></li>
+                    <li><a href="/gen/S/metadata_SEE.json" target="_blank">SEE</a></li>
+                    <li><a href="/gen/S/metadata_SAY.json" target="_blank">SAY</a></li>
+                </ul>
+            </li>
+            <li>
+                <strong>T</strong>
+                <ul class="ma-0 pa-0">
+                    <li><a href="/gen/T/metadata_THE.json" target="_blank">THE</a></li>
+                    <li><a href="/gen/T/metadata_TWO.json" target="_blank">TWO</a></li>
+                    <li><a href="/gen/T/metadata_TRY.json" target="_blank">TRY</a></li>
+                </ul>
+            </li>
+            <li>
+                <strong>W</strong>
+                <ul class="ma-0 pa-0">
+                    <li><a href="/gen/W/metadata_WAS.json" target="_blank">WAS</a></li>
+                    <li><a href="/gen/W/metadata_WHO.json" target="_blank">WHO</a></li>
+                    <li><a href="/gen/W/metadata_WHY.json" target="_blank">WHY</a></li>
+                </ul>
+            </li>
+            <li>
+                <strong>Y</strong>
+                <ul class="ma-0 pa-0">
+                    <li><a href="/gen/Y/metadata_YOU.json" target="_blank">YOU</a></li>
+                    <li><a href="/gen/Y/metadata_YES.json" target="_blank">YES</a></li>
+                    <li><a href="/gen/Y/metadata_YET.json" target="_blank">YET</a></li>
+                </ul>
+            </li>
+        </ul>
+    <hr class="w-90 w-max-700px opaci-10 my-100">
+    <div class="flex-col gap-2 flex-align-stretch">
+        <div class="tx-bold">Commands</div>
+        <div class="flex-row " >
+            <div class="px-2 tx-bold" >#1</div>
+            <div class="flex-1 bg-b-50 tx-white px-4 py-2 bord-r-15">solana-keygen new --no-bip39-passphrase</div>
+            <div class="pointer px-2" data-click="copyCommand1">Copy</div>
+        </div>
+        <div class="flex-row " >
+            <div class="px-2 tx-bold" >#2</div>
+            <div class="flex-1 bg-b-50 tx-white px-4 py-2 bord-r-15">cat C:\Users\Equipo\.config\solana\</div>
+            <div class="pointer px-2" data-click="copyCommand2">Copy</div>
+        </div>
+        <div class="flex-row " >
+            <div class="px-2 tx-bold" >#3</div>
+            <div class="flex-1 bg-b-50 tx-white px-4 py-2 bord-r-15">node .\raw_token22_update.js</div>
+            <div class="pointer px-2" data-click="copyCommand3">Copy</div>
+        </div>
+        <div class="flex-row " >
+            <div class="px-2 tx-bold" >#4</div>
+            <div class="flex-1 bg-b-50 tx-white px-4 py-2 bord-r-15">spl-token create-account TOKEN_ADDRESS</div>
+            <div class="pointer px-2" data-click="copyCommand4">Copy</div>
+        </div>
+        <div class="flex-row " >
+            <div class="px-2 tx-bold" >#5</div>
+            <div class="flex-1 bg-b-50 tx-white px-4 py-2 bord-r-15">spl-token mint TOKEN_ADDRESS 10000</div>
+            <div class="pointer px-2" data-click="copyCommand5">Copy</div>
+        </div>
+    </div>
+    <hr class="w-90 w-max-700px opaci-10 my-100">
+    <a href="/image.png" target="_blank" class="flex-col nodeco tx-gray">
+        <div class="tx-mdl opaci-75 tx-ls-3 mb-1" >Download Example Image</div>
+        <div class="tx-sm underline opaci-50 tx-ls-3  mb-4" >solana22.vercel.app/image.png</div>
+            <img src="image.png" alt="Solana Token22 Helper" class="w-100px ">
+        </a>
+    <hr class="w-90 w-max-700px opaci-10 my-100">
+    <div>
+        <div class="tx-mdl opaci-75 tx-ls-3 mb-2 tx-center" >Metadata JSON Structure</div>
+        
+    <div class="flex-col ">
+        <button data-click="copyJson">
+            Copy
+        </button>
+</div>
+        <pre class="ma-0">
+            <code class="w-min-300px block autoverflow-x bg-w-90 bord-r-15 px-4 w-90 w-max-700px">
+{
+    "name": "Newest Coin Token",
+    "symbol": "NEWCOIN",
+    "description": "This is a token program on the Solana blockchain, defining a common implementation for fungible tokens",
+    "image": "https://solana22.vercel.app/image.png"
+}
+            </code>
+        </pre>        
+
+    </div>
+
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+    class jQueryTemplateView {
+	constructor($container, options, data = null)
+	{
+		this.$container = $($container);
+        console.log(this.$container);
+
+		this.options = Object.assign({
+		}, options);
+
+		this.data = Object.assign({
+		}, data);
+
+		let self = this;
+
+		this.requests =
+		{
+		};
+
+		this.updaters =
+		{
+		};
+
+		this.watchers =
+		{
+		};
+
+		this.clickers =
+		{
+            copyJson: function(event)
+            {
+                let text = `{"name": "Newest Coin Token","symbol": "NEWCOIN","description": "This is a token program on the Solana blockchain, defining a common implementation for fungible tokens","image": "https://solana22.vercel.app/image.png"}`
+                navigator.clipboard.writeText(text);
+                alert('Copied to clipboard\n\n'+text);
+            },
+            copyCommand1: function(event)
+            {
+                let text = 'solana-keygen new --no-bip39-passphrase';
+                navigator.clipboard.writeText(text);
+                alert('Copied command 1 to clipboard!\n\n'+text);
+            },
+            copyCommand2: function(event)
+            {
+                let text = 'cat C:\\Users\\Equipo\\.config\\solana\\';
+                navigator.clipboard.writeText(text);
+                alert('Copied command 2 to clipboard!\n\n'+text);
+            },  
+            copyCommand3: function(event)
+            {
+                let text = 'node .\raw_token22_update.js';
+                navigator.clipboard.writeText(text);
+                alert('Copied command 3 to clipboard!\n\n'+text);
+            },  
+            copyCommand4: function(event)
+            {
+                let text = 'spl-token create-account TOKEN_ADDRESS';
+                navigator.clipboard.writeText(text);
+                alert('Copied command 4 to clipboard!\n\n'+text);
+            },
+            copyCommand5: function(event)   
+            {
+                let text = 'spl-token mint TOKEN_ADDRESS 10000';
+                navigator.clipboard.writeText(text);
+                alert('Copied command 5 to clipboard!\n\n'+text);
+            }
+            
+            
+		};
+
+		this.initWatchers();
+	}
+
+	initWatchers()
+	{
+		let self = this;
+
+		this.$container.on('change',"[data-watch]", function(event)
+		{
+			self.watchers[$(this).data('watch')](event);
+		});
+
+		this.$container.on('click',"[data-click]", function(event)
+		{
+			self.clickers[$(this).data('click')](event);
+		});
+	}
+}
+
+$(document).ready(function(){
+	let newjQueryTemplateView = new jQueryTemplateView('#templateViewId', {
+	});
+
+});
+
+</script>    
+    
+</body>
+</html>
