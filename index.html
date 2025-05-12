@@ -115,6 +115,30 @@
             </li>
         </ul>
     <hr class="w-90 w-max-700px opaci-10 my-100">
+    <div class="flex-col gap-2 flex-align-stretch">
+        <div class="tx-bold">Commands</div>
+        <div class="flex-row " >
+            <div class="flex-1 bg-b-50 tx-white px-4 py-2 bord-r-15">solana-keygen new --no-bip39-passphrase</div>
+            <div class="pointer px-2" data-click="copyCommand1">Copy</div>
+        </div>
+        <div class="flex-row " >
+            <div class="flex-1 bg-b-50 tx-white px-4 py-2 bord-r-15">cat C:\Users\Equipo\.config\solana\</div>
+            <div class="pointer px-2" data-click="copyCommand2">Copy</div>
+        </div>
+        <div class="flex-row " >
+            <div class="flex-1 bg-b-50 tx-white px-4 py-2 bord-r-15">node .\raw_token22_update.js</div>
+            <div class="pointer px-2" data-click="copyCommand3">Copy</div>
+        </div>
+        <div class="flex-row " >
+            <div class="flex-1 bg-b-50 tx-white px-4 py-2 bord-r-15">spl-token create-account TOKEN_ADDRESS</div>
+            <div class="pointer px-2" data-click="copyCommand4">Copy</div>
+        </div>
+        <div class="flex-row " >
+            <div class="flex-1 bg-b-50 tx-white px-4 py-2 bord-r-15">spl-token mint TOKEN_ADDRESS 10000</div>
+            <div class="pointer px-2" data-click="copyCommand5">Copy</div>
+        </div>
+    </div>
+    <hr class="w-90 w-max-700px opaci-10 my-100">
     <a href="/image.png" target="_blank" class="flex-col nodeco tx-gray">
         <div class="tx-mdl opaci-75 tx-ls-3 mb-1" >Download Example Image</div>
         <div class="tx-sm underline opaci-50 tx-ls-3  mb-4" >solana22.vercel.app/image.png</div>
@@ -125,12 +149,12 @@
         <div class="tx-mdl opaci-75 tx-ls-3 mb-2 tx-center" >Metadata JSON Structure</div>
         
     <div class="flex-col ">
-        <button data-click="copy">
+        <button data-click="copyJson">
             Copy
         </button>
 </div>
         <pre class="ma-0">
-            <code class="w-min-300px block autoverflow-x bg-w-90 bord-r-8 px-4 w-90 w-max-700px">
+            <code class="w-min-300px block autoverflow-x bg-w-90 bord-r-15 px-4 w-90 w-max-700px">
 {
     "name": "Newest Coin Token",
     "symbol": "NEWCOIN",
@@ -174,12 +198,44 @@
 
 		this.clickers =
 		{
-            copy: function(event)
+            copyJson: function(event)
             {
                 let text = `{"name": "Newest Coin Token","symbol": "NEWCOIN","description": "This is a token program on the Solana blockchain, defining a common implementation for fungible tokens","image": "https://solana22.vercel.app/image.png"}`
                 navigator.clipboard.writeText(text);
-                alert('Copied to clipboard');
+                alert('Copied to clipboard\n\n'+text);
+            },
+            copyCommand1: function(event)
+            {
+                let text = 'solana-keygen new --no-bip39-passphrase';
+                navigator.clipboard.writeText(text);
+                alert('Copied command 1 to clipboard!\n\n'+text);
+            },
+            copyCommand2: function(event)
+            {
+                let text = 'cat C:\\Users\\Equipo\\.config\\solana\\';
+                navigator.clipboard.writeText(text);
+                alert('Copied command 2 to clipboard!\n\n'+text);
+            },  
+            copyCommand3: function(event)
+            {
+                let text = 'node .\raw_token22_update.js';
+                navigator.clipboard.writeText(text);
+                alert('Copied command 3 to clipboard!\n\n'+text);
+            },  
+            copyCommand4: function(event)
+            {
+                let text = 'spl-token create-account TOKEN_ADDRESS';
+                navigator.clipboard.writeText(text);
+                alert('Copied command 4 to clipboard!\n\n'+text);
+            },
+            copyCommand5: function(event)   
+            {
+                let text = 'spl-token mint TOKEN_ADDRESS 10000';
+                navigator.clipboard.writeText(text);
+                alert('Copied command 5 to clipboard!\n\n'+text);
             }
+            
+            
 		};
 
 		this.initWatchers();
