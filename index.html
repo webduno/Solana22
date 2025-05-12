@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/csscss@1.1.2/index.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <title>Solana Token22 Helper</title>
+</head>
+<body class="bg-b-20 flex-col mt-8  tx-gray">
+    <h1>Solana Token22 Helper</h1>
+    <p class="tx-lg">This is a helper for the Solana Token22 Program</p>
+    <p class="w-300px tx-center">It is a simple tool that allows you to create and manage your tokens on the Solana blockchain.</p>
+<script>
+    class jQueryTemplateView {
+	constructor($container, options, data = null)
+	{
+		this.$container = $($container);
+
+		this.options = Object.assign({
+		}, options);
+
+		this.data = Object.assign({
+		}, data);
+
+		let self = this;
+
+		this.requests =
+		{
+		};
+
+		this.updaters =
+		{
+		};
+
+		this.watchers =
+		{
+		};
+
+		this.clickers =
+		{
+		};
+
+		this.initWatchers();
+	}
+
+	initWatchers()
+	{
+		let self = this;
+
+		this.$container.on('change',"[data-watch]", function(event)
+		{
+			self.watchers[$(this).data('watch')](event);
+		});
+
+		this.$container.on('click',"[data-click]", function(event)
+		{
+			self.clickers[$(this).data('click')](event);
+		});
+	}
+}
+
+$(document).ready(function(){
+
+	let newjQueryTemplateView = new jQueryTemplateView('#templateViewId', {
+	});
+
+});
+
+</script>    
+    
+
+</body>
+</html>
