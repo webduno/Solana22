@@ -10,7 +10,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: #111111 url(bggg.png) no-repeat center center fixed;
+            background: #111111 url(bggg.png) no-repeat center center / cover;
             margin-left: 5%;
         }
         a {
@@ -20,7 +20,7 @@
     <title>Solana Token22 Helper</title>
 </head>
 <body class=" flex-col mt-8 w-90 tx-white pb-100">
-    <div  id="templateViewId" class="bg-b-50 box-shadow-5 bg-glass-10 pa-4 bord-r-25">
+    <div  id="templateViewId" class="  pa-4 bord-r-25">
     <a href="/" class="flex-col nodeco tx-white">
         <h1 class="tx-mdl  tx-ls-3 mb-1" >Solana Token22 Helper</h1>
         <div class="tx-sm underline  tx-ls-3 tx-gray mb-4" >solana22.vercel.app</div>
@@ -32,10 +32,10 @@
     <div class="tx-gray flex-col">
         <p class="w-300px tx-center">It is a simple tool that allows you to create and manage your tokens on the Solana blockchain.</p>
     </div>
-    <hr class="w-90 w-max-700px opaci-10 mt-100 Q_xs">
-    <div class="flex-col mt-8" id="exampleList">
+    
+    <div class="bord-r-25 flex-col py-8 bg-b-50 mt-8 border-white-50" id="exampleList">
         <div class="tx-mdl opaci-75 tx-ls-3 mb-1" >Download Example JSONs</div>
-        <ul class="flex-wrap flex-align-start gap-8 ">
+        <ul class="flex-wrap flex-align-start gap-8 w-80 ">
             <li>
                 <strong class="tx-bold-2 tx-lg ">A</strong>
                 <ul class="ma-0 pa-0">
@@ -121,9 +121,10 @@
                 </ul>
             </li>
         </ul>
-    <hr class="w-90 w-max-700px opaci-10 my-100">
+    </div>
+    <div class="bord-r-25 flex-col py-8 bg-b-50 mt-8" id="commandsList">
     <div class="flex-col gap-2 flex-align-stretch">
-        <div class="tx-bold tx-gray">Token Creation Commands</div>
+        <div class="tx-center tx-bold tx-gray">Token Creation Commands</div>
         <div class="Q_xs py-2"></div>
         <div class="flex-row Q_xs_flex-col gap-1" >
             <div class="px-2 tx-gray tx-bold Q_sm_x" >#1</div>
@@ -155,13 +156,15 @@
             <div class="underline pointer px-2 tx-link" data-click="copyCommand5">Copy <span class="Q_xs">Command #5</span></div>
         </div>
     </div>
-    <hr class="w-90 w-max-700px opaci-10 my-100">
-    <a href="/image.png" target="_blank" class="flex-col nodeco tx-white">
+</div>
+    <!-- <hr class="w-90 w-max-700px opaci-10 my-100"> -->
+    <div class="bord-r-25 flex-col pt-8 bg-b-50 mt-8 " id="ddddd">
+        <a href="/image.png" target="_blank" class="flex-col nodeco tx-white">
         <div class="tx-mdl opaci-75 tx-ls-3 mb-1" >Download Example Image</div>
         <div class="tx-sm underline opaci-50 tx-ls-3  mb-4" >solana22.vercel.app/image.png</div>
             <img src="image.png" alt="Solana Token22 Helper" class="w-100px ">
         </a>
-    <hr class="w-90 w-max-700px opaci-10 my-100">
+    <hr class="w-90 w-max-700px opaci-10 my-8 ">
     <div>
         <div class="tx-mdl opaci-75 tx-ls-3 mb-2 tx-center" >Metadata JSON Structure</div>
         
@@ -183,6 +186,14 @@
 
     </div>
 
+</div>
+<div class="flex-col mt-100">
+    <a href="https://github.com/webduno/Solana22" target="_blank" class="flex-col nodeco tx-white">
+        <h1 class="tx-mdl  tx-ls-3 mb-1" >Github Repository</h1>
+        <div class="tx-sm underline  tx-ls-3 tx-gray mb-4" >github.com/webduno/Solana22</div>
+        <img  
+        src="git.png" alt="Solana Token22 Helper" class="w-100px pa-1 bg-white block bord-r-100p">
+    </a>
 </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
