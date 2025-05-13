@@ -10,7 +10,8 @@ import { createSignerFromKeypair, none, percentAmount, signerIdentity } from "@m
 async function updateTokenMetadata() {
     const myKeypair = loadWalletKey(process.env.KEYPAIR_FILE || '');
     const mint = new web3.PublicKey(process.env.TOKEN_ADDRESS || '');
-    
+    console.log("TOKEN_ADDRESS");
+    console.log(TOKEN_ADDRESS);
     const umi = createUmi(process.env.UMI_RPC_ENDPOINT || '');
   
     const signer = createSignerFromKeypair(umi, fromWeb3JsKeypair(myKeypair));
@@ -39,12 +40,14 @@ async function updateTokenMetadata() {
     }
 
     try {
+        console.log("Updating metadata account... DEV:"+signer.publicKey);
         const txid = await updateMetadataAccountV2(umi, {
             ...accounts,
             data,
             updateAuthority: signer.publicKey,
             isMutable: true,
         }).sendAndConfirm(umi);
+        console.log("Success: https://solscan.io/tx/"+txid);
         return txid;
     } catch (error) {
         throw error;
