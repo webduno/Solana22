@@ -352,13 +352,13 @@ target="_blank">💻 spl.solana.com/token-2022</a></li>
             },  
             copyCommand5: function(event)
             {
-                let text = 'spl-token create-account TOKEN_ADDRESS';
+                let text = 'spl-token create-account TOKEN_ADDRESS keypair.json';
                 navigator.clipboard.writeText(text);
                 alert('Copied command 6 to clipboard!\n\n'+text);
             },
             copyCommand6: function(event)   
             {
-                let text = 'spl-token mint TOKEN_ADDRESS 10000';
+                let text = 'spl-token mint TOKEN_ADDRESS 10000 --fee-payer keypair.json';
                 navigator.clipboard.writeText(text);
                 alert('Copied command 7 to clipboard!\n\n'+text);
             },
