@@ -198,7 +198,7 @@ target="_blank">💻 spl.solana.com/token-2022</a></li>
         <div class="Q_xs py-2"></div>
         <div class="flex-row Q_xs_flex-col gap-1" >
             <div class="px-2 tx-gray tx-bold Q_sm_x" >#3</div>
-            <div class="flex-1 tx-xsm tx-center bg-black tx-white border-white-50 px-1 py-2 bord-r-15">spl-token create-token  --program-id <small class="tx-xs">TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb</small></div>
+            <div class="flex-1 tx-xsm tx-center bg-black tx-white border-white-50 px-1 py-2 bord-r-15">spl-token create-token  --program-id <small class="tx-xs">TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb</small> <small class="tx-xs">keypair.json</small></div>
             <div class="underline pointer px-2 tx-link" data-click="copyCommand3">Copy <span class="Q_xs">Command #3</span></div>
         </div>
         <div class="Q_xs py-2"></div>
@@ -334,7 +334,7 @@ target="_blank">💻 spl.solana.com/token-2022</a></li>
             },  
             copyCommand3: function(event)
             {
-                let text = 'spl-token create-token  --program-id TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb';
+                let text = 'spl-token create-token  --program-id TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb keypair.json';
                 navigator.clipboard.writeText(text);
                 alert('Copied command 3 to clipboard!\n\n'+text);
             },  
