@@ -186,26 +186,26 @@ target="_blank">💻 spl.solana.com/token-2022</a></li>
         <div class="Q_xs py-2"></div>
         <div class="flex-row Q_xs_flex-col gap-1" >
             <div class="px-2 tx-gray tx-bold Q_sm_x" >#1</div>
-            <div class="flex-1 tx-xsm bg-black tx-white border-white-50 px-4 py-2 bord-r-15">solana-keygen new --no-bip39-passphrase</div>
+            <div class="flex-1 tx-xsm bg-black tx-white border-white-50 px-4 py-2 bord-r-15">node secretgen.js SECRET_KEY</div>
             <div class="underline pointer px-2 tx-link" data-click="copyCommand1">Copy <span class="Q_xs">Command #1</span></div>
         </div>
-        <div class="Q_xs py-2"></div>
+        <!-- <div class="Q_xs py-2"></div>
         <div class="flex-row Q_xs_flex-col gap-1" >
             <div class="px-2 tx-gray tx-bold Q_sm_x" >#2</div>
             <div class="flex-1 tx-xsm bg-black tx-white border-white-50 px-4 py-2 bord-r-15">cat C:\Users\Equipo\.config\solana\id.json</div>
+            <div class="underline pointer px-2 tx-link" data-click="copyCommand2">Copy <span class="Q_xs">Command #2</span></div>
+        </div> -->
+        <div class="Q_xs py-2"></div>
+        <div class="flex-row Q_xs_flex-col gap-1" >
+            <div class="px-2 tx-gray tx-bold Q_sm_x" >#2</div>
+            <div class="flex-1 tx-xsm tx-center bg-black tx-white border-white-50 px-1 py-2 bord-r-15">spl-token create-token  --program-id <small class="tx-xs">TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb</small> <small class="tx-xs">keypair.json</small></div>
             <div class="underline pointer px-2 tx-link" data-click="copyCommand2">Copy <span class="Q_xs">Command #2</span></div>
         </div>
         <div class="Q_xs py-2"></div>
         <div class="flex-row Q_xs_flex-col gap-1" >
             <div class="px-2 tx-gray tx-bold Q_sm_x" >#3</div>
-            <div class="flex-1 tx-xsm tx-center bg-black tx-white border-white-50 px-1 py-2 bord-r-15">spl-token create-token  --program-id <small class="tx-xs">TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb</small> <small class="tx-xs">keypair.json</small></div>
-            <div class="underline pointer px-2 tx-link" data-click="copyCommand3">Copy <span class="Q_xs">Command #3</span></div>
-        </div>
-        <div class="Q_xs py-2"></div>
-        <div class="flex-row Q_xs_flex-col gap-1" >
-            <div class="px-2 tx-gray tx-bold Q_sm_x" >#4</div>
             <div class="flex-1 tx-xsm bg-black tx-white border-white-50 px-4 py-2 bord-r-15">npm i</div>
-            <div class="underline pointer px-2 tx-link" data-click="copyCommand4">Copy <span class="Q_xs">Command #4</span></div>
+            <div class="underline pointer px-2 tx-link" data-click="copyCommand3">Copy <span class="Q_xs">Command #3</span></div>
         </div>
         <div class="flex-row gap-4">
             <hr class="flex-1 opaci-10 ">
@@ -214,21 +214,21 @@ target="_blank">💻 spl.solana.com/token-2022</a></li>
         </div>
         <div class="Q_xs py-2"></div>
         <div class="flex-row Q_xs_flex-col gap-1" >
-            <div class="px-2 tx-gray tx-bold Q_sm_x" >#5</div>
+            <div class="px-2 tx-gray tx-bold Q_sm_x" >#4</div>
             <div class="flex-1 tx-xsm bg-black tx-white border-white-50 px-4 py-2 bord-r-15">node token22.js</div>
+            <div class="underline pointer px-2 tx-link" data-click="copyCommand4">Copy <span class="Q_xs">Command #4</span></div>
+        </div>
+        <div class="Q_xs py-2"></div>
+        <div class="flex-row Q_xs_flex-col gap-1" >
+            <div class="px-2 tx-gray tx-bold Q_sm_x" >#5</div>
+            <div class="flex-1 tx-xsm bg-black tx-white border-white-50 px-4 py-2 bord-r-15">spl-token create-account TOKEN_ADDRESS</div>
             <div class="underline pointer px-2 tx-link" data-click="copyCommand5">Copy <span class="Q_xs">Command #5</span></div>
         </div>
         <div class="Q_xs py-2"></div>
         <div class="flex-row Q_xs_flex-col gap-1" >
             <div class="px-2 tx-gray tx-bold Q_sm_x" >#6</div>
-            <div class="flex-1 tx-xsm bg-black tx-white border-white-50 px-4 py-2 bord-r-15">spl-token create-account TOKEN_ADDRESS</div>
-            <div class="underline pointer px-2 tx-link" data-click="copyCommand6">Copy <span class="Q_xs">Command #6</span></div>
-        </div>
-        <div class="Q_xs py-2"></div>
-        <div class="flex-row Q_xs_flex-col gap-1" >
-            <div class="px-2 tx-gray tx-bold Q_sm_x" >#7</div>
             <div class="flex-1 tx-xsm bg-black tx-white border-white-50 px-4 py-2 bord-r-15">spl-token mint TOKEN_ADDRESS 10000</div>
-            <div class="underline pointer px-2 tx-link" data-click="copyCommand7">Copy <span class="Q_xs">Command #7</span></div>
+            <div class="underline pointer px-2 tx-link" data-click="copyCommand6">Copy <span class="Q_xs">Command #6</span></div>
         </div>
     </div>
 </div>
@@ -322,41 +322,41 @@ target="_blank">💻 spl.solana.com/token-2022</a></li>
             },
             copyCommand1: function(event)
             {
-                let text = 'solana-keygen new --no-bip39-passphrase';
+                let text = 'node secretgen.js SECRET_KEY';
                 navigator.clipboard.writeText(text);
                 alert('Copied command 1 to clipboard!\n\n'+text);
             },
+            // copyCommand2: function(event)
+            // {
+            //     let text = 'cat C:\\Users\\Equipo\\.config\\solana\\id.json';
+            //     navigator.clipboard.writeText(text);
+            //     alert('Copied command 2 to clipboard!\n\n'+text);
+            // },  
             copyCommand2: function(event)
-            {
-                let text = 'cat C:\\Users\\Equipo\\.config\\solana\\id.json';
-                navigator.clipboard.writeText(text);
-                alert('Copied command 2 to clipboard!\n\n'+text);
-            },  
-            copyCommand3: function(event)
             {
                 let text = 'spl-token create-token  --program-id TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb keypair.json';
                 navigator.clipboard.writeText(text);
                 alert('Copied command 3 to clipboard!\n\n'+text);
             },  
-            copyCommand4: function(event)
+            copyCommand3: function(event)
             {
                 let text = 'npm i';
                 navigator.clipboard.writeText(text);
                 alert('Copied command 4 to clipboard!\n\n'+text);
             },  
-            copyCommand5: function(event)
+            copyCommand4: function(event)
             {
                 let text = 'node token22.js';
                 navigator.clipboard.writeText(text);
                 alert('Copied command 5 to clipboard!\n\n'+text);
             },  
-            copyCommand6: function(event)
+            copyCommand5: function(event)
             {
                 let text = 'spl-token create-account TOKEN_ADDRESS';
                 navigator.clipboard.writeText(text);
                 alert('Copied command 6 to clipboard!\n\n'+text);
             },
-            copyCommand7: function(event)   
+            copyCommand6: function(event)   
             {
                 let text = 'spl-token mint TOKEN_ADDRESS 10000';
                 navigator.clipboard.writeText(text);
